@@ -1,0 +1,42 @@
+<html>   
+<head>
+	<link rel="stylesheet" type="text/css" href="login_style.css">
+	<title> Login Page </title>     
+</head>    
+<body>	    
+    	<script src="login_script.js"></script>
+	<center> <h1> LOGIN </h1> </center>   
+    	<form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+        <div class="container">   
+		<label>Email : </label>   
+            	<input id="user" type="text" placeholder="Enter Email" name="user" required>  
+            	<label>Password : </label>   
+            	<input id="pass" type="password" placeholder="Enter Password" name="pass" required>  
+            	<center><button type="submit" id="btn" onclick="CheckEmail(user)">Login</button></center>
+            	<center><label>Don't have an account?<a href="registration.html">Sign Up</a></label></center>   
+        </div>   
+    	</form> 
+	<script>  
+		function validation()  
+		{  
+			var id=document.f1.user.value;  
+			var ps=document.f1.pass.value;  
+			if(id.length=="" && ps.length=="") {  
+				alert("User Name and Password fields are empty");  
+				return false;  
+			}  
+			else  
+			{  
+				if(id.length=="") {  
+					alert("User Name is empty");  
+					return false;  
+				}   
+				if (ps.length=="") {  
+				alert("Password field is empty");  
+				return false;  
+				}  
+			}                             
+		}  
+	</script>    
+</body>     
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>One Way Tickets</title>
+	<link rel="stylesheet" href="oneway_style.css">
+</head>
+<body>
+	<div class="menubar">
+		<p>
+			One Way Ticket
+		</p>
+	</div>
+	<center>
+		<form>
+			<div class="container">
+				<label for="from">From:</label>
+				<select id="from" name="from">
+					<option value="delhi">Delhi</option>
+					<option value="mumbai">Mumbai</option>
+					<option value="bangalore">Bangalore</option>
+					<option value="chennai">Chennai</option>
+					<option value="Kolkata">Kolkata</option>
+				</select><br>
+				<label for="to">To:</label>
+				<select id="to" name="to">
+					<option value="delhi">Delhi</option>
+					<option value="mumbai">Mumbai</option>
+					<option value="bangalore">Bangalore</option>
+					<option value="chennai">Chennai</option>
+					<option value="Kolkata">Kolkata</option>
+				</select><br>
+				<label for="departure">Depart Date:</label>
+				<input type="date" id="departure" name="departure"><br>
+				<label for="people">Passengers:</label>
+				<input type="number" min="1" max="5" id="people" name="adults" placeholder="Adults">
+				<input type="number" min="1" max="5" id="people" name="children" placeholder="Children"><br>
+				<center><button type="submit">Book</button></center>
+			</div>
+		</form>
+	</center>
+</body>
+</html>

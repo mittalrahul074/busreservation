@@ -1,0 +1,42 @@
+body {
+	background-image: url('road.jpg');
+	margin: 0;
+}
+
+.menubar {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	color: #ffef96;
+	background-color: #50394c;
+	font-family: Calibri;
+	font-size: 25pt;
+	font-style: normal;
+	font-weight: bold;
+}
+
+form{   
+	margin: 200px;
+	text-align: center;
+	background-color: #89cff0;
+	border: 2px solid #50394c;
+	font-family: Arial, sans-serif;
+}
+
+.container {   
+        padding: 50px;
+	display: inline-block;
+	text-align: left;
+}
+
+button {
+	text-decoration: none;
+	background-color: green;
+	color: white;
+       	width: 40%;
+        padding: 10px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+	border-radius: 20px;
+}
