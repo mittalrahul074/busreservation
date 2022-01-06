@@ -13,7 +13,7 @@
 		<a class="loginlink" href="login.html">Click here to Login</a>
 	</center>
 	<br>
-	<form name="register" onsubmit="return ValidateForm(this)">
+	<form name="register" action="registration.php" onsubmit="return ValidateForm(this)" method="post">
 	<table align="center" cellpadding = "10">
 		<tr>
 			<td>First Name :</td>
@@ -135,11 +135,11 @@
 		</tr>
 		<tr>
 			<td>Email Id :</td>
-			<td><input type="text" name="user" maxlength="100" required  id="user"/></td>
+			<td><input type="text" name="email" value=""></td>
 		</tr>
 		<tr>
 			<td>Set a Password :</td>
-			<td><input type="password" name="pass" required id="pass"/><br>
+			<td><input type="text" name="password" value="" required id="pass" ><br>
 			*(Password length should be minimum 8 characters)*
 			</td>
 		</tr>

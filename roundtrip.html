@@ -10,7 +10,7 @@
 		</p>
 	</div>
 	<center>
-		<form style="margin: 77.5px;margin-left: 200px;margin-right: 200px;">
+		<form style="margin: 77.5px;margin-left: 200px;margin-right: 200px;" action="2db.php">
 			<div class="container">
 				<label for="from">From:</label>
 				<select id="from" name="from">
@@ -35,7 +35,7 @@
 				<label for="people">Passengers:</label>
 				<input type="number" min="1" max="5" id="people" name="adults" placeholder="Adults">
 				<input type="number" min="1" max="5" id="people" name="children" placeholder="Children"><br>
-				<center><button type="submit">Book</button></center>
+				<center><input type="submit" name="submit" value="Book"></center>
 			</div>
 		</form>
 	</center>
